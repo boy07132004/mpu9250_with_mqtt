@@ -1,5 +1,8 @@
 **/build
 **/.build
-sdkconfig*
+
+sdkconfig
+sdkconfig.old
+
 save/*.csv
 .vscode
