@@ -13,13 +13,21 @@ This project utilizes the Xiao ESP32-S3 to collect acceleration data from an MPU
 
 ## Installation
 
-1. Install esp-idf & paho-mqtt for python
-2. Clone this repository to your local machine.
-3. Setup the mqtt configuration in menuconfig and flash the project into Xiao ESP32-S3
-    ![](/src/esp-idf.png)
-4. Execute python application to collect acceleration data
+1. Setup esp-idf in your local machine
+2. Pip install paho-mqtt
+3. Clone this repository to your local machine.
+4. Setup the configuration in menuconfig
+    
+    ![](/src/mqtt_config.png)
+
+5. Flash the project into Xiao ESP32-S3
+    ```bash
+    idf.py flash
+    ```
+6. Execute python application to collect acceleration data
+
     ![](/src/python_save_data.png)
-5. You will see the file in "save" folder.
+7. You will see the file in "save" folder.
 
 ## LIBRARY REF
 - https://github.com/hepingood/mpu9250
